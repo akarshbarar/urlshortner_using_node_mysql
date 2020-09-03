@@ -1,0 +1,29 @@
+{
+  "name": "urlshortnerwithmysql",
+  "version": "1.0.0",
+  "description": "\"URL shortner using Node js and Mysql\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"Node",
+    "js",
+    "mysql",
+    "urlshortner\""
+  ],
+  "author": "\"Akarsh Barar\"",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "shortid": "^2.2.15"
+  }
+}

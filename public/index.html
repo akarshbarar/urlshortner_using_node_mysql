@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>URL Shortner</title>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>URL shortner using Node and MySql</h1>
+        <form action="/shorturl" method="POST" class="my-4 form-inline">
+            <label for="fullUrl" class="sr-only">Url</label>
+            <input required class="form-control col mr-2" type="url" name="fullUrl" placeholder="url" id="fullUrl"/>
+            <button class="btn btn-success" type="submit">Shrink</button>
+        </form>
+        <table class="table table-striped table-responsive">
+            <thead>
+                <th>Full Url</th>
+                <th> Short Url</th>
+                <th>Clicks</th>
+            </thead>
+            <tbody>
+               
+                    <tr>
+                        <td><a href="abc">abc</a></td>
+                        <td><a href="/abc"> abc</a></td>
+                        <td>0</td>
+                        
+                    </tr>
+                
+            </tbody>
+        </table>
+
+        <h1>Registered Employees</h1> 
+        <!-- table for showing data -->
+        <table id="employees" class="table table-striped table-responsive"></table> 
+    </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
